@@ -33,7 +33,7 @@ const clerkWebhooks = async (request, response) => {
                     photo: data.image_url
                 }
                 await userModel.create(userData)
-                response.json()
+                response.json({})
                 break;
             }
             case 'user.updated': {
